@@ -18,9 +18,9 @@ ENV NAGIOS_HOME=/opt/nagios \
     NAGIOS_FQDN=nagios.example.com \
     NAGIOSADMIN_USER=nagiosadmin \
     NAGIOSADMIN_PASS=nagios \
-    NAGIOS_VERSION=4.4.5 \
-    NAGIOS_PLUGINS_VERSION=2.2.1 \
-    NRPE_VERSION=4.0.0 \
+    NAGIOS_VERSION=4.4.6 \
+    NAGIOS_PLUGINS_VERSION=2.3.3 \
+    NRPE_VERSION=4.0.3 \
     APACHE_LOCK_DIR=/var/run \
     APACHE_LOG_DIR=/var/log/apache2
 
@@ -58,12 +58,12 @@ ARG BUILDPLATFORM
 MAINTAINER Christos Manios <maniopaido@gmail.com>
 
 LABEL name="Nagios" \
-      nagiosVersion="4.4.5" \
-      nagiosPluginsVersion="2.2.1" \
-      nrpeVersion="3.2.1" \
+      nagiosVersion="4.4.6" \
+      nagiosPluginsVersion="2.3.3" \
+      nrpeVersion="4.0.3" \
       homepage="https://www.nagios.com/" \
       maintainer="Christos Manios <maniopaido@gmail.com>" \
-      build="1"
+      build="2"
 
 # Add dependencies required to build Nagios
 RUN apk update && \

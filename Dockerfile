@@ -56,16 +56,6 @@ FROM builder-base as builder-compile
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
 
-MAINTAINER Christos Manios <maniopaido@gmail.com>
-
-LABEL name="Nagios" \
-      nagiosVersion="4.4.6" \
-      nagiosPluginsVersion="2.3.3" \
-      nrpeVersion="4.0.3" \
-      homepage="https://www.nagios.com/" \
-      maintainer="Christos Manios <maniopaido@gmail.com>" \
-      build="2"
-
 # Add dependencies required to build Nagios
 RUN apk update && \
     apk add --no-cache build-base automake libtool autoconf py-docutils gnutls  \
@@ -193,11 +183,12 @@ FROM builder-base
 MAINTAINER Christos Manios <maniopaido@gmail.com>
 
 LABEL name="Nagios" \
-      version="4.4.5" \
+      nagiosVersion="4.4.6" \
+      nagiosPluginsVersion="2.3.3" \
+      nrpeVersion="4.0.3" \
       homepage="https://www.nagios.com/" \
       maintainer="Christos Manios <maniopaido@gmail.com>" \
-      build="1"
-
+      build="2"
 
 RUN mkdir -p ${NAGIOS_HOME}  && \
     mkdir -p /orig/apache2

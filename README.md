@@ -9,7 +9,7 @@ Build Status:
 
 ## Quick reference
 
-* **Supported architectures**: `amd64`, `arm32v6`, `arm32v7`
+* **Supported architectures**: `amd64`, `arm/v6`, `arm/v7`
 * **Where to file issues**: https://github.com/manios/docker-nagios/issues
 
 ## Supported tags and respective `Dockerfile` links
@@ -69,13 +69,15 @@ This will configure and use globally `"Europe/Athens"` in both container and Nag
 
 ## Flavours
 
-This Docker image is designed with optimising resources usage in mind and is build for 3 architectures.
+This Docker image is designed with optimising resources usage in mind and is build for multiple hardware architectures. The following matrix can be used to determine if your hardware architecture is supported:
 
-|Architecture|Variant|Notes|
-|-|-|-|
-|amd64|-|Normal image for x64 PCs|
-|arm|v6|Image for ARM v6 processors. Compatible with Raspberry Pi 1 boards|
-|arm|v7|Image for ARM v7 processors. Compatible with Raspberry Pi [Model 2 B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) and [3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/), [3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) boards|
+|Hardware|amd64|arm/v6|arm/v7|
+|-|-|-|-|
+|PC (64bit)|:white_check_mark:|||
+|Raspberry Pi 1||:white_check_mark:||
+|Raspberry Pi 2|||:white_check_mark:|
+|Raspberry Pi 3|||:white_check_mark:|
+|Raspberry Pi 4|||:white_check_mark:|
 
 ## Test configuration
 

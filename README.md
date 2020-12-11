@@ -16,6 +16,7 @@ Build Status:
 
 * `4.4.6`, `4.4`, `latest` [(4.4.6/Dockerfile)](https://github.com/manios/docker-nagios/blob/dokimes/Dockerfile)
 
+For more information about the image versions you may refer to the [CHANGELOG](https://github.com/manios/docker-nagios/blob/dokimes/CHANGELOG.md)
 
 ## Running
 
